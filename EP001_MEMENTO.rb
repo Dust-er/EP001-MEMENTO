@@ -56,29 +56,3 @@ with_fx :reverb do |rev|
     
   end
 end
-
-##|     control rev, mix: rrand(0, 0.6)
-##|     r = rrand(0.1, 0.2)
-##|     with_synth :prophet do
-##|       8.times do
-##|         sleep 0.125
-##|         play chord(:a4, :m7).choose, release: r, cutoff: rrand(40, 130), amp: 0.7
-##|       end
-##|     end
-
-##|     control rev, mix: rrand(0, 0.6)
-##|     r = rrand(0.05, 0.3)
-##|     8.times do
-##|       play chord(:e3, :minor).choose, release: r, cutoff: rrand(110, 130), amp: 0.4
-##|       sleep 0.125
-##|     end
-
-##|     control rev, mix: rrand(0, 0.6)
-##|     with_fx :echo, phase: 0.25, decay: 8 do
-##|       4.times do
-##|         play chord([:e3, :e4, :e5].choose, :minor).choose, release: 0.05, cutoff: rrand(50, 129), amp: 0.5
-##|         sleep 0.125
-##|       end
-##|     end
-##|   end
-##| end
